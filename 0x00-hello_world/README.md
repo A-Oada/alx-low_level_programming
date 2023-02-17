@@ -1,4 +1,4 @@
-#0x00. C - Hello, World
+# 0x00. C - Hello, World
 This project touches on the following concepts
 * Why C programming is awesome
 * Who invented C

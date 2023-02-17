@@ -1,18 +1,16 @@
 #include <stdio.h>
 
 /**
- * puts.c - prints the phrase "Programming is like building a multilingual puzzle"
- *
- * main - entry point
- * 
+ * puts.c - prints "Programming is like building a multilingual puzzle"
  * Return: Always 0
+ * main - prints "Programming is like building a multilingual puzzle"
  */
 
-int main (void)
+int main(void)
 {
 	char phrase[] = "\"Programming is like building a multilingual puzzle";
-	
+
 	puts(phrase);
 
-	return 0;
+	return (0);
 }

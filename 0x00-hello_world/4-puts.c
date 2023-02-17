@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
- * puts.c - prints "Programming is like building a multilingual puzzle"
+ * main - Prints "Programming is like building a multilingual puzzle"
+ * phrase[]: phrase to be printed
+ *
  * Return: Always 0
- * main - prints "Programming is like building a multilingual puzzle"
  */
 
 int main(void)

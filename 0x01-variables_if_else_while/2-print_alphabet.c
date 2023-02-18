@@ -8,13 +8,14 @@
 int main(void)
 {
 	char alpha = 'a';
+	char l = '\n';
 
 	while (alpha <= 'z')
 	{
-		printf("%c", alpha);
+		putchar(alpha);
 		alpha++;
 	}
-	printf("\n");
+	putchar(l);
 
 	return (0);
 }

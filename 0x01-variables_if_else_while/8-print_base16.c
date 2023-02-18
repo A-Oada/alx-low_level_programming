@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point - Prints all single digit base 16 numbers
- * 
+ *
  * Return: Always 0
  */
 int main(void)

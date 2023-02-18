@@ -3,20 +3,23 @@
 /**
  * main - Entry point - Prints all possible combinations of single-digit no.
  *
- * Returm: 0
+ * Return: Always 0
  */
 int main(void)
 {
-	char no = '0', sep = ',', sp = ' ', nl = '\n';
+	int no = 48, sep = 44, sp = 32, nl = 10;
 
 	while (no <= '9')
 	{
-		putchar(no);
-		putchar(sep);
-		putchar(sp);
+		putchar((char)no);
+		if (no < '9')
+		{
+			putchar((char)sep);
+			putchar((char)sp);
+		}
 		no++;
 	}
-	putchar(nl);
+	putchar((char)nl);
 
 	return (0);
 }

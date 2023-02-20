@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point - Prints all possible different combs of two digits.
- * 
+ *
  * Return: Always 0
  */
 int main(void)

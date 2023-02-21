@@ -10,8 +10,13 @@
 int main(void)
 {
 	char s[] = "_putchar";
+	int i = 0;
 
-	printf("%s\n", s);
+	do {
+		putchar(s[i]);
+		i++;
+	} while (s[i] != '\0');
+	putchar('\n');
 
 	return (0);
 }

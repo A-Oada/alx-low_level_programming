@@ -1,5 +1,5 @@
 # include <stdio.h>
-# include <main.h>
+# include "main.h"
 
 /**
  * main - Entry point
@@ -14,10 +14,10 @@ int main(void)
 	int i = 0;
 
 	do {
-		putchar(s[i]);
+		_putchar(s[i]);
 		i++;
 	} while (s[i] != '\0');
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }

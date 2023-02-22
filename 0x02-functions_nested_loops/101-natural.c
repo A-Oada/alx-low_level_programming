@@ -1,30 +1,24 @@
 #include <stdio.h>
 
-void print_sum(int no);
 /**
- * main - Entry point - Prints sum of all multiples of 3 or 5
+ * main - Entry point
  *
  * Return: Always 0
  */
 int main(void)
 {
-	print_sum(3);
-	print_sum(5);
+	int sum = 0, i = 0;
 
-	return(0);
-}
-
-void print_sum(int no)
-{
-	int sum = 0;
-
-	while (no < 1024)
+	while (i < 1024)
 	{
-		if ((no % 3) == 0)
+		if (((i % 3) == 0) || ((i % 5) == 0))
 		{
-			sum = sum + no;
+			sum = sum + i;
 		}
-		no++;
+		i++;
 	}
 	printf("%i\n", sum);
+
+	return (0);
 }
+

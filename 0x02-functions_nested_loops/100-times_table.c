@@ -8,53 +8,34 @@
  */
 void print_times_table(int n)
 {
-	int no1 = 0, no2 = 0, no3;
+	int digit, mult, result;
 
-	if (n > 15 || n < 0)
-		return;
-
-	while (no1 <= n)
+	if (n <= 15 && n >= 0)
 	{
-		no2 = 0;
-		while (no2 <= n)
+		for (digit = 0; digit <= n; digit++)
 		{
-			no3 = no2 * no1;
-			if (no3 <= 9)	/* If no is single digit output it */
+			_putchar('0');
+			for (mult = 1; mult <= n; mult++)
 			{
-				if (no2 != 0)
+				_putchar(',');
+				_putchar(' ');
+				result = digit * mult;
+				if (result <= 99)
+				_putchar(' ');
+				if (result <= 9)
+				_putchar(' ');
+				if (result >= 100)
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
+					_putchar((result / 100) + '0');
+					_putchar((result / 10) % 10 + '0');
 				}
-				_putchar('0' + no3);
-			}
-			else if (no3 > 9 && no3 <= 99)	/* If no is a two digit output each digit */
-			{
-				if (no2 != 0)
+				else if (result <= 99 && result >= 10)
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
+					_putchar((result / 10) + '0');
 				}
-				_putchar('0' + no3 / 10);	/* Output digit 1 of no */
-				_putchar('0' + no3 % 10);	/* Output digit 2 of no */
+				_putchar((result % 10) + '0');
 			}
-			else if (no3 > 99 && no3 <= 999)
-			{
-				if (no2 != 0)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-				_putchar('0' + no3 / 100);
-				_putchar('0' + (no3 / 10) % 10);
-				_putchar('0' + no3 % 10);
-			}
-			no2++;
+			_putchar('\n');
 		}
-		_putchar('\n');
-		no1++;
 	}
 }

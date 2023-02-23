@@ -11,17 +11,17 @@
         int i = 2, j = 0;
         
         /* Store the values of the sequence in an array*/
-        while (i <= 47) /* The first two values are already stored in the sequence*/
+        while (i <= 49)
         {
                 fib[i] = fib[i - 1] + fib[i - 2];
                 i++;
         }
         j = 0;
          /* Print the elements of the loop*/
-         while (j <= 47)
+         while (j <= 49)
         {
                 printf("%lu", fib[j]);
-                if (j != 47)
+                if (j != 49)
                 {
                         printf(", ");
                 }

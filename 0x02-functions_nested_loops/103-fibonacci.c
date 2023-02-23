@@ -9,7 +9,7 @@ int main(void)
 {
 	unsigned long int fib[50] = {1, 2};
 	int i = 2, j = 0, k, sum;
-	
+
 	/* Store the values of the sequence in an array*/
 	while (i <= 49)
 	{

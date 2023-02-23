@@ -7,7 +7,7 @@
   */
  int main(void)
 {
-        unsigned long int fib[49] = {1, 2};
+        unsigned long int fib[50] = {1, 2};
         int i = 2, j = 0;
         
         /* Store the values of the sequence in an array*/

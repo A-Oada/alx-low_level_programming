@@ -5,3 +5,5 @@ This project touches on the same topics as 0x02. C - Functions, nested loops but
 		* A function that checks for uppercase character.
 	* 1. isdigit
 		* A function that checks for a digit (0 through 9).
+	* 3. The numbers speak for themselves
+		* A function that prints the numbers, from 0 to 9, followed by a new line.
